@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <div  class="navbar__button">
+    <div id="button-navbar" class="btn-close"><div class="bars"></div></div>
+  </div>
+  <script>
+    let btn = document.getElementById('button-navbar');
+
+    btn.addEventListener("click", function() {
+    if(this.className === "btn-close") {
+      this.className = "btn-open";
+    }else {
+      this.className = "btn-close";
+    }
+  });
+  </script>
+</body>
+</html>

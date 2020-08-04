@@ -1,0 +1,65 @@
+/* 3 bars animation closing effect */
+#button-navbar {
+  width: 100%;
+  height: 100%;
+  padding-top: 29px;
+  cursor: pointer;
+}
+.bars {
+  display: block;
+  width: 32px;
+  height: 5px;
+  margin: 5px auto;
+  border: none;
+  border-radius: 40px;
+  background-color: #D1E0EB;
+  &::before {
+    content: '';
+    display: block;
+    width: 32px;
+    height: 5px;
+    margin: 5px auto;
+    border: none;
+    border-radius: 40px;
+    background-color: #D1E0EB;
+  }
+  &::after {
+    content: '';
+    display: block;
+    width: 32px;
+    height: 5px;
+    margin: 5px auto;
+    border: none;
+    border-radius: 40px;
+    background-color: #D1E0EB;
+  }
+}
+.btn-open {
+  .bars {
+    transform: rotate(-45deg);
+    transition: .4s ease;
+    &::after {
+      opacity: 0;
+      transition: .4s ease;
+    }
+    &::before {
+      transform: rotate(90deg);
+      transition: .4s ease;
+    }
+  }
+}
+.btn-close {
+  .bars {
+    transform: rotate(0deg);
+    transition: .4s ease;
+    &::after {
+      opacity: 1;
+      transition: .4s ease;
+    }
+    &::before {
+      transform: rotate(0deg) translateY(-10px);
+      transition: .4s ease;
+    }
+  }
+}
+/* END 3 bars animation closing effect END*/

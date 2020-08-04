@@ -48,7 +48,7 @@ section:not(.home) {
 }
 
 .dashed {
-  margin: 0;
+  margin: 0 0 2em 0;
   border: 1px dashed var(--border-navbar-items);
 }
 
@@ -76,6 +76,10 @@ section:not(.home) {
 .grayscale {
   filter: var(--filter-grayscale);
   opacity: 0.3;
+}
+
+.rm-margin {
+  margin: 0;
 }
 
 .icon-big {
@@ -118,7 +122,7 @@ section:not(.home) {
   margin: 5px auto;
   border: none;
   border-radius: 40px;
-  background-color: #D1E0EB;
+  background-color: #d1e0eb;
 }
 .bars::before {
   content: "";
@@ -128,7 +132,7 @@ section:not(.home) {
   margin: 5px auto;
   border: none;
   border-radius: 40px;
-  background-color: #D1E0EB;
+  background-color: #d1e0eb;
 }
 .bars::after {
   content: "";
@@ -138,7 +142,7 @@ section:not(.home) {
   margin: 5px auto;
   border: none;
   border-radius: 40px;
-  background-color: #D1E0EB;
+  background-color: #d1e0eb;
 }
 
 .btn-open .bars {
@@ -263,6 +267,27 @@ section:not(.home) {
   width: 50%;
   height: auto;
   border-radius: 50%;
+}
+
+.small-container {
+  width: 100%;
+}
+.small-container h4 {
+  margin-bottom: 2em;
+}
+.small-container h5 {
+  margin: 0;
+  text-align: left;
+  font-size: 1.2em;
+}
+.small-container .sub-title {
+  margin: 0;
+  font-size: 0.7em;
+  font-weight: 400;
+  color: var(--highlight);
+}
+.small-container--para {
+  margin: 0;
 }
 
 .slidein-menu {

@@ -256,6 +256,9 @@ section:not(.home) {
 .socials img {
   filter: invert(67%) sepia(24%) saturate(223%) hue-rotate(174deg) brightness(92%) contrast(83%);
 }
+.socials .glitch {
+  filter: none;
+}
 
 .main-title-section {
   display: flex;

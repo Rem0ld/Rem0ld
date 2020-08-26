@@ -8,8 +8,7 @@
   --highlight: #7f5af0;
   --button-text: #fffffe;
   --border-navbar-items: #94a1b22b;
-  --purple-filter: invert(50%) sepia(37%) saturate(7218%) hue-rotate(232deg)
-    brightness(92%) contrast(105%);
+  --purple-filter: invert(50%) sepia(37%) saturate(7218%) hue-rotate(232deg) brightness(92%) contrast(105%);
   --tertiary: #2cb67d;
   --filter-grayscale: grayscale(100%);
 }
@@ -200,9 +199,14 @@ section:not(.home) {
 .home .intro {
   padding-top: 5em;
   background-color: transparent !important;
+  transform: translate(-13%, 23%);
 }
 .home .intro > * {
   background-color: transparent !important;
+}
+.home .intro p {
+  color: black;
+  font-weight: 400;
 }
 
 .navbar {
@@ -240,8 +244,6 @@ section:not(.home) {
 }
 
 .socials {
-  position: absolute;
-  bottom: 0;
   width: 100%;
   display: grid;
   place-items: center;
@@ -249,9 +251,13 @@ section:not(.home) {
 .socials ul {
   display: flex;
   flex-direction: row;
+  padding: 0.5em;
 }
 .socials li {
   border: none !important;
+}
+.socials li:hover {
+  transform: scale(120%);
 }
 .socials img {
   filter: invert(67%) sepia(24%) saturate(223%) hue-rotate(174deg) brightness(92%) contrast(83%);
@@ -339,6 +345,41 @@ section:not(.home) {
 
 .sub-skill-list {
   padding-left: 3em;
+}
+
+.portfolio .section {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card {
+  max-width: 30%;
+  margin: 0.7em;
+}
+.card--img {
+  width: 100%;
+}
+.card--content {
+  display: flex;
+  justify-content: space-evenly;
+}
+.card--content span {
+  display: flex;
+  align-items: center;
+}
+.card--content a {
+  font-size: 1.2em;
+}
+
+.redirect {
+  margin-left: 0.3em;
 }
 
 form {
@@ -472,7 +513,7 @@ textarea:focus {
 
   section:not(.home) {
     margin: 0 1em;
-    width: 88% !important;
+    width: 85% !important;
   }
 
   .home {

@@ -115,6 +115,9 @@ section:not(.home) {
     width: 1em;
     height: 1em;
   }
+  &-smaller {
+    width: 0.7em;
+  }
 }
 
 // END UTILITY CLASS
@@ -431,6 +434,7 @@ section:not(.home) {
 }
 
 .redirect {
+  width: 0.7em;
   margin-left: 0.3em;
 }
 

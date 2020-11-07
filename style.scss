@@ -427,8 +427,8 @@ section:not(.home) {
     .hovering {
       display: block;
       position: absolute;
-      width: 358px;
-      height: 260px;
+      width: 100%;
+      height: 100%;
       background-color: rgba(0, 0, 0, 0.8);
       display: flex;
       justify-content: space-evenly;

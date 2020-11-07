@@ -8,8 +8,7 @@
   --highlight: #7f5af0;
   --button-text: #fffffe;
   --border-navbar-items: #94a1b22b;
-  --purple-filter: invert(50%) sepia(37%) saturate(7218%) hue-rotate(232deg)
-    brightness(92%) contrast(105%);
+  --purple-filter: invert(50%) sepia(37%) saturate(7218%) hue-rotate(232deg) brightness(92%) contrast(105%);
   --tertiary: #2cb67d;
   --filter-grayscale: grayscale(100%);
 }
@@ -115,6 +114,7 @@ section:not(.home) {
     width: 1em;
     height: 1em;
   }
+
   &-smaller {
     width: 0.7em;
   }
@@ -222,11 +222,12 @@ section:not(.home) {
   background-size: cover;
 
   .intro {
+    height: 50vh;
     padding-top: 5em;
     background-color: transparent !important;
     transform: translate(-13%, 23%);
 
-    & > * {
+    &>* {
       background-color: transparent !important;
     }
 
@@ -269,7 +270,7 @@ section:not(.home) {
       display: inline-flex;
       font-size: 1.2em;
 
-      > * {
+      >* {
         margin: 0 var(--gap);
       }
     }
@@ -296,8 +297,7 @@ section:not(.home) {
   }
 
   img {
-    filter: invert(67%) sepia(24%) saturate(223%) hue-rotate(174deg)
-      brightness(92%) contrast(83%);
+    filter: invert(67%) sepia(24%) saturate(223%) hue-rotate(174deg) brightness(92%) contrast(83%);
   }
 
   .glitch {
@@ -410,9 +410,32 @@ section:not(.home) {
   justify-content: space-evenly;
 }
 
+.hovering {
+  display: none;
+  background-color: transparent;
+}
+
 .card {
+  position: relative;
+  display: grid;
+  place-items: center;
+  box-shadow: 0px 3px 5px 5px rgba(0, 0, 0, 0.5);
   max-width: 80%;
   margin: 0.7em;
+
+  &:hover {
+    .hovering {
+      display: block;
+      position: absolute;
+      width: 358px;
+      height: 260px;
+      background-color: rgba(0, 0, 0, 0.8);
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      transition: background-color 1s;
+    }
+  }
 
   &--img {
     width: 100%;
@@ -630,6 +653,7 @@ textarea {
   form {
     width: 50%;
   }
+
   .card {
     width: 30%;
   }

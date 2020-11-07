@@ -322,12 +322,13 @@ section:not(.home) {
 
 .small-container {
   width: 100%;
+  margin-top: 1em;
 }
 .small-container h4 {
   margin-bottom: 2em;
 }
 .small-container h5 {
-  margin: 0;
+  margin: 0.5em 0 0 0;
   text-align: left;
   font-size: 1.2em;
 }

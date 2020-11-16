@@ -1,5 +1,5 @@
-const url = "http://localhost:3001/api/v1/projects/";
-// const url = "https://crud-api-projects.herokuapp.com/api/v1/projects";
+// const url = "http://localhost:3001/api/v1/projects/";
+const url = "http://178.79.146.254/api/v1/projects";
 
 getData(url);
 
@@ -13,6 +13,7 @@ function getData(url) {
   })
     .then((response) => response.json())
     .then((result) => {
+      console.log("Got Json!");
       result.forEach((project) => {
         createCard(project);
       });

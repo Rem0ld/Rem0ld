@@ -1,5 +1,5 @@
 // const url = "http://localhost:3001/api/v1/projects/";
-const url = "http://178.79.146.254/api/v1/projects";
+const url = "https://178.79.146.254/api/v1/projects";
 
 getData(url);
 
